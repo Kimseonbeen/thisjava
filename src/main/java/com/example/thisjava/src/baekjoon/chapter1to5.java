@@ -8,24 +8,22 @@ public class chapter1to5 {
         String answer = "";
 
         char[] s = str.toCharArray();
-        int lt = 0, rt = str.length() -1;
+        int lt = 0, rt = str.length() - 1;
 
-        for (char c : s) {
-            String ss = String.valueOf(c);
-            while (lt < rt) {
-                if (!ss.matches("[0-9|a-z|A-Z|ㄱ-ㅎ|ㅏ-ㅣ|가-힝|(|)|.|-]*")) {
-                    System.out.println("ss : " + ss);
-                    char tmp = s[lt];
-                    s[lt] = s[rt];
-                    s[rt] = tmp;
-                }
+        while(lt < rt){
+            //알파벳이 아닐 때
+            if(!Character.isAlphabetic(s[lt])) lt++;
+            else if(!Character.isAlphabetic(s[rt])) rt--;
+            else { //lt, rt 둘다 알파벳 일 때
+                char tmp = s[lt];
+                s[lt] = s[rt];
+                s[rt] = tmp;
                 lt++;
                 rt--;
             }
-            String aa = String.valueOf(s);
-            answer = aa;
-
         }
+        answer = String.valueOf(s);
+
         return answer;
     }
 
