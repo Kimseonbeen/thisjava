@@ -20,17 +20,22 @@ public class chapter1to10 {
             }
             answer[i] = p;
             p++;
-
         }
 
         p = 1000;
 
-        for (int i = s.length(); i < 0; i--) {
+        // 1000 0 1 2 3 0 1 2 3 4 0
+
+        for (int i = s.length() -1 ; i >= 0; i--) {
             if (s.charAt(i) == t) {
-                p =0;
+                p = 0;
             }
-            answer[i] = p;
+            answer[i] = Math.min(answer[i], p);
             p++;
+        }
+
+        for (int i : answer) {
+            System.out.print(i + " ");
         }
 
     }
