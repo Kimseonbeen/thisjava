@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class chapter2to3 {
+public class chapter2to4 {
 
     /***
      *
