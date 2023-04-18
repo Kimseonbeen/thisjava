@@ -21,8 +21,11 @@ public class chapter2to6 {
 
             while (tmp > 0) {
                 int t = tmp % 10;
+                System.out.println("t = " + t);
                 res = res * 10 + t;
+                System.out.println("res = " + res);
                 tmp = tmp / 10;
+                System.out.println("tmp = " + tmp);
             }
             if (isPrime(res)) {
                 answer.add(res);
@@ -35,7 +38,7 @@ public class chapter2to6 {
     private static boolean isPrime(int num) {
         if (num == 1) return false;
         for (int i = 2; i < num; i++) {
-            if (num % i == 0) return false;
+                if (num % i == 0) return false;
         }
         return true;
     }
