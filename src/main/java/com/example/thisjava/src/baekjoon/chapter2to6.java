@@ -19,6 +19,10 @@ public class chapter2to6 {
 
             int res = 0;
 
+            /**
+             * 정수 앞 뒤 순서 변경 로직
+             */
+            System.out.println("tmp first = " + tmp);
             while (tmp > 0) {
                 int t = tmp % 10;
                 System.out.println("t = " + t);
@@ -27,6 +31,7 @@ public class chapter2to6 {
                 tmp = tmp / 10;
                 System.out.println("tmp = " + tmp);
             }
+            System.out.println("tmp-full = " + tmp);
             if (isPrime(res)) {
                 answer.add(res);
             }
