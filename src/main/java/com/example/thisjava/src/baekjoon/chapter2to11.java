@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class chapter2to11 {
-    int[] dx = {0, 1, 2, 3, 4};
-
     /**
      5
      2 3 1 7 3  [0][0]  [1][0]
@@ -28,6 +26,10 @@ public class chapter2to11 {
             int cnt = 0;
             for (int j = 1; j <= n; j++) {
                 for (int k = 1; k <= 5; k++) {
+                    // arr[1][1] == arr[1][1]
+                    // break;
+                    // arr[1][1] == arr[2][1]
+                    System.out.println("arr[i][k] : arr[" + i + "][" + k  +"] // " + "arr[j][k] : arr[" + j + "][" + k  +"]");
                     if (arr[i][k] == arr[j][k]) {
                         cnt++;
                         break;
