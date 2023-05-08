@@ -25,6 +25,7 @@ public class chapter3to3 {
         int answer = 0, sum = 0;
         for (int i = 0; i < k; i++) sum += arr[i];
         answer = sum;
+        System.out.println("answer = " + answer);
         for (int i = k; i < n; i++) {
             sum += (arr[i] - arr[i - k]);
             answer = Math.max(answer, sum);
