@@ -31,6 +31,10 @@ public class chapter1to3 {
             i++;
         }
 
+        for (String s : arr) {
+            System.out.println("s = " + s);
+        }
+
         System.out.println(solution(arr));
     }
 }

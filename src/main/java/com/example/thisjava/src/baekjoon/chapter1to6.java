@@ -8,7 +8,8 @@ public class chapter1to6 {
         String answer = "";
 
         for (int i = 0; i < str.length(); i++) {
-            int index = str.indexOf(str.charAt(i));
+            int index = str.indexOf(str.charAt(i)); // indexOf(ch) 문자로 인덱스 번호 반환
+            System.out.println("index = " + index);
 
             // i == index 일 때 처음 등장한 알파벳
 

@@ -23,7 +23,10 @@ public class chapter1to9 {
 
         for (char x : c) {
             if (x >= 48 && x <= 57) {
+                System.out.println("x = " + x);
+
                 answer = answer * 10 + (x - 48);
+                System.out.println("answer = " + answer);
             }
         }
 

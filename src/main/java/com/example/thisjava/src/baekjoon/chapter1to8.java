@@ -8,8 +8,10 @@ public class chapter1to8 {
         String answer = "NO";
 
         String newStr = str.toUpperCase().replaceAll("[^A-Z]", "");
+        System.out.println("newStr = " + newStr);
 
         String tmp = new StringBuilder(newStr).reverse().toString();
+        System.out.println("tmp = " + tmp);
 
         if (newStr.equals(tmp)) answer = "YES";
 

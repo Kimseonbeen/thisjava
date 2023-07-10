@@ -11,7 +11,7 @@ public class chapter1to7 {
 
         if (str.equalsIgnoreCase(tmp)) answer = "YES";
 
-/*        char[] c = str.toCharArray();
+        /*char[] c = str.toCharArray();
         int lt = 0, rt = str.length() -1;
 
             while (lt < rt) {
